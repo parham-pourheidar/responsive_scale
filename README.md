@@ -16,6 +16,34 @@ With `ContextSizeExtensions`, you can scale width, height, font size, icons, and
 
 ---
 
+## 🚀 Usage
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:context_size_extensions/context_size_extensions.dart';
+
+class DemoPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SizedBox(
+        width: context.w(50),
+        height: context.h(50),
+        child: Padding(
+          padding: context.symmetric(horizontal: 16, vertical: 8),
+          child: Text(
+            'Responsive Text',
+            style: TextStyle(fontSize: context.s(16)),
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+---
+
 ## 📦 Installation
 
 Add this to your `pubspec.yaml`:
