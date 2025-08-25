@@ -50,4 +50,4 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  responsive_scale: ^1.0.0
+  responsive_scale: ^1.0.1
