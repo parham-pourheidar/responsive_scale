@@ -6,7 +6,7 @@ import 'dart:math';
 ///
 /// This is useful for creating responsive layouts where UI elements scale
 /// proportionally on different screen sizes.
-extension ContextSizeExtensions on BuildContext {
+extension ResponsiveScale on BuildContext {
   /// Scales the given [width] based on the current screen width.
   ///
   /// The screen width is divided by 1000 and then multiplied by the provided [width].
@@ -57,3 +57,4 @@ extension ContextSizeExtensions on BuildContext {
   /// ```
   EdgeInsets symmetric({num horizontal = 0, num vertical = 0}) => EdgeInsets.symmetric(horizontal: w(horizontal), vertical: h(vertical));
 }
+

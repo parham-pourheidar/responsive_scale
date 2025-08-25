@@ -1,7 +1,7 @@
-# ContextSizeExtensions
+# ResponsiveScale
 
 A lightweight Flutter extension on `BuildContext` that helps you build responsive UIs effortlessly.  
-With `ContextSizeExtensions`, you can scale width, height, font size, icons, and padding proportionally based on the current screen size – without writing repetitive `MediaQuery` logic.
+With `ResponsiveScale`, you can scale width, height, font size, icons, and padding proportionally based on the current screen size – without writing repetitive `MediaQuery` logic.
 
 ---
 
@@ -18,28 +18,17 @@ With `ContextSizeExtensions`, you can scale width, height, font size, icons, and
 
 ## 🚀 Usage
 
-```dart
-import 'package:flutter/material.dart';
-import 'package:context_size_extensions/context_size_extensions.dart';
+```
 
-class DemoPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SizedBox(
-        width: context.w(50),
-        height: context.h(50),
-        child: Padding(
-          padding: context.symmetric(horizontal: 16, vertical: 8),
-          child: Text(
-            'Responsive Text',
-            style: TextStyle(fontSize: context.s(16)),
-          ),
-        ),
-      ),
-    );
-  }
-}
+SizedBox(
+width: context.w(50),
+height: context.h(50),
+child: Padding(
+padding: context.symmetric(horizontal: 16, vertical: 8),
+child: Text('Responsive Text', style: TextStyle(fontSize: context.s(16))),
+),
+)
+
 ```
 
 ---
