@@ -1,7 +1,7 @@
 name: responsive_scale
 description: >
   A simple Flutter extension on BuildContext for responsive width, height, font size, and padding scaling.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/parham-pourheidar/responsive_scale
 repository: https://github.com/parham-pourheidar/responsive_scale
 issue_tracker: https://github.com/parham-pourheidar/responsive_scale/issues

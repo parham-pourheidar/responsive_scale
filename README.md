@@ -50,4 +50,4 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  context_size_extensions: ^1.0.0
+  responsive_scale: ^1.0.0
