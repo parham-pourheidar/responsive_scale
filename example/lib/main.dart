@@ -25,7 +25,7 @@ class MyHomePage extends StatelessWidget {
         width: context.w(90),
         height: context.h(150),
         padding: context.symmetric(vertical: 5, horizontal: 10),
-        child: Text('test', style: TextStyle(fontSize: context.s(15)),),
+        child: Text('test', style: TextStyle(fontSize: context.s(15))),
       ),
     );
   }

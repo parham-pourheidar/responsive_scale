@@ -24,7 +24,10 @@ extension ResponsiveScale on BuildContext {
   ///
   /// The formula is: sqrt(width * height) / 1000 * size.
   /// This provides a balanced scaling relative to the screen size.
-  double s(num size) => sqrt(MediaQuery.of(this).size.width * MediaQuery.of(this).size.height) / 1000 * size;
+  double s(num size) =>
+      sqrt(MediaQuery.of(this).size.width * MediaQuery.of(this).size.height) /
+      1000 *
+      size;
 
   /// Returns symmetric padding with optional horizontal and vertical scaling
   /// based on the current screen size.
@@ -55,6 +58,6 @@ extension ResponsiveScale on BuildContext {
   ///   child: Text('Hello'),
   /// )
   /// ```
-  EdgeInsets symmetric({num horizontal = 0, num vertical = 0}) => EdgeInsets.symmetric(horizontal: w(horizontal), vertical: h(vertical));
+  EdgeInsets symmetric({num horizontal = 0, num vertical = 0}) =>
+      EdgeInsets.symmetric(horizontal: w(horizontal), vertical: h(vertical));
 }
-
